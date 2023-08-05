@@ -1,0 +1,33 @@
+@use "../../scss/" as *;
+
+.favorite-button {
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $main-color;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid $main-color;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover, &:focus {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+
+  &.loading {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+
+  .icon {
+    font-size: 0.9em;
+    margin-right: 0.9em;
+    vertical-align: center;
+  }
+}
+

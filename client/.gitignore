@@ -1,0 +1,33 @@
+# dependencies
+/node_modules
+
+# build
+/build
+
+# environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+*.suo
+*.swp
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.test
+.env.production
+.npmrc
+.yarnrc

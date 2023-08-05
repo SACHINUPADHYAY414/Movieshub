@@ -1,0 +1,15 @@
+@use "../../scss/" as *;
+
+
+.video {
+  background-color: $white;
+  padding: 1.6rem;
+  border-radius: $border-radius;
+  margin-bottom: 1.6rem;
+}
+
+.iframe {
+  border-radius: $border-radius;
+  overflow:hidden;
+  position:relative;
+}

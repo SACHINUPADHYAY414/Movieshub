@@ -1,0 +1,106 @@
+@use "../../scss/" as *;
+
+.login-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  background-color: $body-bg;
+}
+
+.left {
+  flex: 1;
+  color: $txt-color;
+  background-color: $main-color;
+  background-image: linear-gradient(35deg, $body-bg 0%, $body-bg 50%, $white 100%);
+  border-radius: 0 $border-radius 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  max-width: 400px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $main-color;
+  text-underline-offset: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.inputforms {
+  display: block;
+  background-color: $body-bg;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputforms:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #ff3c00;
+}
+
+.inputforms::placeholder {
+  color: #b0b0b0;
+}
+
+.inputforms:focus::placeholder {
+  color: transparent;
+}
+
+.rg-here {
+  color: #ff3c00;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.rg-here:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  margin-top: 1rem;
+  border: 4px solid transparent;
+  background-color: $white;
+  color: $main-color;
+  border-radius: $border-radius;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 7px 8px #ff00004d;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.login-btn:hover {
+  color: $white;
+  background-color: $main-color;
+  box-shadow: 0px 0px 7px 15px #ff00004d;
+}

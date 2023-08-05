@@ -5,7 +5,7 @@ import apiConfig from './apiConfig';
 
 const axiosClient = axios.create({
   baseURL: apiConfig.baseUrl,
-  baseUrl:'https://movieshub-g17r.onrender.com'
+  //baseUrl:'https://movieshub-g17r.onrender.com'
   headers: {
     'Content-Type': 'application/json',
   },

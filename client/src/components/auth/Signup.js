@@ -41,7 +41,7 @@ const Signup = () => {
                 <div className='signup-left'>
                         <div className='logo'>
                             <img src={logo} alt='MyMovies' />
-                            <Link to='/'>MyMovies</Link>
+                            <Link to='/'>MoviesHub</Link>
                         </div><br></br>
                         <h3>The best Movie Database App for you</h3>
                         <p>Please register to start using our service.</p>

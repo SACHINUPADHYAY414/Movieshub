@@ -15,7 +15,7 @@ const Login = () => {
     const [ emailError,setEmailError] = useState()
     const [passwordError,setPasswordError] = useState()
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/users/loggeduser?email=${email}`).then(res => { console.log(res.data.user._id) })
+        axios.get(`https://movieshub-hy9l.onrender.com/api/users/loggeduser?email=${email}`).then(res => { console.log(res.data.user._id) })
     }, [email])
 
     const user = {

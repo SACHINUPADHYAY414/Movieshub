@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const favorite = axios.create({
-  baseURL: "http://localhost:8000/",
+  baseURL: "https://movieshub-hy9l.onrender.com",
 });
 
 export default favorite;
